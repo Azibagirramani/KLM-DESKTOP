@@ -1,0 +1,18 @@
+
+<div class="row top-bar">
+  <!--search bar -->
+  <div class="col-md-6 search-class">
+  <input type="text" name="search" placeholder="Search..">
+  </div>
+    <!--search bar -->
+  <div class="col-md-1 items"><mat-icon matBadge="15" matBadgeColor="warn">question_answer</mat-icon></div>
+  <div class="col-md-1 items"><mat-icon matBadge="15" matBadgeColor="warn">flight_takeoff </mat-icon></div>
+  <div class="col-md-1 items"><mat-icon matBadge="15" matBadgeColor="warn">notification_important</mat-icon></div>
+  <div class="col-md-2 items">
+<button mat-button [matMenuTriggerFor]="menu"><mat-icon>supervised_user_circle</mat-icon>Kelvin Mansi</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>Account</button>
+  <button mat-menu-item (click)="logout()">Logout</button>
+</mat-menu>
+  </div>
+</div>

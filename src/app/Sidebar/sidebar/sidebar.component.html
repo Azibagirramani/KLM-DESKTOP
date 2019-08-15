@@ -1,0 +1,18 @@
+<div class="container-fluid">
+      <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+          <div class="sidebar-sticky ">
+            <div class="row">
+              <div class="col">LOGO</div>
+                <div class="col">KLM GO</div>
+                  </div>
+            <ul class="nav flex-column">
+              <li *ngFor="let menuroute of menuroutes" class="nav-item ">
+                <a class="nav-link nav-style" [routerLink]="[menuroute.path]">
+                  <i class={{menuroute.icons}} aria-hidden="true"></i>
+                     {{menuroute.title}}
+                </a>
+              </li>
+            </ul>
+          </div>
+           
